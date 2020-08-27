@@ -1,18 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import codecs
-import distutils.spawn
 import os.path
 import os
 import platform
 import re
 import sys
-import subprocess
 import json
 import xlrd
-import subprocess
-import socket
-import shutil
 
 from functools import partial
 from collections import defaultdict
