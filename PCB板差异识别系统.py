@@ -1617,6 +1617,7 @@ class MainWindow(QMainWindow, WindowMixin):
             xmlPath1 = path1 + XML_EXT
             xmlPath2 = path2 + XML_EXT
             self.fileListWidget.clear()
+            self.fileListWidget2.clear()
             if os.path.isfile(imgPath1) and os.path.isfile(imgPath2) and \
                     os.path.isfile(xmlPath1) and os.path.isfile(xmlPath2):
                 self.loadFile(path1 + ".bmp", 1)
