@@ -33,7 +33,6 @@ from libs.pascal_voc_io import XML_EXT
 from libs.yolo_io import YoloReader
 from libs.yolo_io import TXT_EXT
 from libs.ustr import ustr
-from libs.version import __version__
 from libs.compare import Compare
 from libs.save import Save
 from libs.templateDialog import TemplateDialog
