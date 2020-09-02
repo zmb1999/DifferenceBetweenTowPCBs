@@ -695,10 +695,6 @@ class MainWindow(QMainWindow, WindowMixin):
         elif osName == 'Darwin':
             return ['open', '-a', 'Safari']
 
-    def showInfoDialog(self):
-        msg = u'Name:{0} \nApp Version:{1} \n{2} '.format(__appname__, __version__, sys.version_info)
-        QMessageBox.information(self, u'Information', msg)
-
     def createShape(self):
         assert self.beginner()
         if self.filePath and self.filePath2:
