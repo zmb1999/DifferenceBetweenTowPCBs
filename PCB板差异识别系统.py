@@ -107,7 +107,6 @@ class MainWindow(QMainWindow, WindowMixin):
 
         self._noSelectionSlot = False
         self._beginner = True
-        self.screencastViewer = self.getAvailableScreencastViewer()
         self.ExcelPath = '.\excel'
         # Load predefined classes to the list
         self.loadPredefinedClasses(defaultPrefdefClassFile)
@@ -684,16 +683,6 @@ class MainWindow(QMainWindow, WindowMixin):
 
     def advanced(self):
         return not self.beginner()
-
-    def getAvailableScreencastViewer(self):
-        osName = platform.system()
-
-        if osName == 'Windows':
-            return ['C:\\Program Files\\Internet Explorer\\iexplore.exe']
-        elif osName == 'Linux':
-            return ['xdg-open']
-        elif osName == 'Darwin':
-            return ['open', '-a', 'Safari']
 
     def createShape(self):
         assert self.beginner()
