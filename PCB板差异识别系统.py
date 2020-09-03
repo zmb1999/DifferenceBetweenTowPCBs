@@ -684,6 +684,7 @@ class MainWindow(QMainWindow, WindowMixin):
     def advanced(self):
         return not self.beginner()
 
+
     def createShape(self):
         assert self.beginner()
         if self.filePath and self.filePath2:
